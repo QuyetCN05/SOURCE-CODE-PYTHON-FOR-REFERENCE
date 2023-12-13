@@ -3,6 +3,7 @@ def check(ke, u, v, e, n):
     un[u] = 1
     while len(q)>0:
         x = q.pop()
+        print(x)
         if x==v: return False
         for i in ke[x]:
             if un[i]==0 and i!=e:
@@ -19,5 +20,6 @@ for t in range(int(input())):
     cnt = 0  
     for i in range(n+1):
         if i!=u and i!=v:
-            if check(ke, u, v, i, n): cnt+=1
+            if check(ke, u, v, i, n): 
+                cnt+=1
     print(cnt)

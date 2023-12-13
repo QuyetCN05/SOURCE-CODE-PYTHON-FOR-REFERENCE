@@ -5,3 +5,4 @@ for t in range(int(input())):
         if(len(ans) + len(i) + 1 > 100): break
         ans += ' ' + i
     print(ans)
+    print(len(ans))
